@@ -107,7 +107,7 @@
 
                     });
 
-                    this.tempoInsere = 30 + Math.floor(21 * Math.random());
+                    this.tempoInsere = 100 //50 + Math.floor(400 * Math.random());
                      
 
                 },
@@ -134,7 +134,7 @@
                        
                         
                         else if (obs.x <= -obs.largura) {
-                            this._obs.splice(i , 1);
+                            this._obs.splice(i, 1);
                             tam--;
                             i--;
                         }
@@ -223,7 +223,7 @@
             function atualiza() {
                 frames++;
 
-                    bloco.atualiza();
+                bloco.atualiza();
                 
                 if (estadoAtual == estados.jogando) 
                    obstaculos.atualiza(); 
