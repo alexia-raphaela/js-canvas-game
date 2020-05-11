@@ -251,6 +251,10 @@
                     ctx.save();
                     ctx.translate(LARGURA / 2, ALTURA / 2);
                     ctx.fillStyle =  "#fff";
+
+                    if (bloco.score > record)
+                        ctx.fillText("Novo Record!", -150, -65);
+
                     
                     if (bloco.score < 10)
                         ctx.fillText(bloco.score, -13, 19);
