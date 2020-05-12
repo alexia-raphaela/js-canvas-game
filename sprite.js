@@ -5,7 +5,7 @@ function Sprite(x, y, largura, altura) {
     this.altura = altura;
 
     this.desenha = function(xCanvas, yCanvas) {
-        ctx.drawImage();
+        ctx.drawImage(this.x, this.y, this.largura, this.altura, xCanvas, yCanvas);
 
     }
 
