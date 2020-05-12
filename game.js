@@ -1,7 +1,7 @@
 
             //variáveis de jogo
             var canvas, ctx, ALTURA, LARGURA, frames = 0, maxPulos = 3, velocidade = 6,
-            estadoAtual, record,
+            estadoAtual, record, img,
 
             estados = {
                 jogar: 0,
@@ -187,7 +187,9 @@
                 if (record == null) {
                     record = 0;
                 }
-
+            
+                img = new Image();
+                img.src = "imagens/sheet.png";
                 
                 roda();
 
