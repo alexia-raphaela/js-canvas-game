@@ -187,9 +187,9 @@
                 if (record == null) {
                     record = 0;
                 }
-            
+
                 img = new Image();
-                img.src = "imagens/sheet.png";
+                img.src = "images/sheet1.png";
                 
                 roda();
 
@@ -218,9 +218,11 @@
 
             //função para ser feito o desenho do jogo
             function desenha() {
-                ctx.fillStyle = "#50beff"
-                ctx.fillRect(0, 0, LARGURA, ALTURA);
-                
+                //ctx.fillStyle = "#50beff"
+                //ctx.fillRect(0, 0, LARGURA, ALTURA);
+               
+                bg.desenha(0, 0);
+               
                 ctx.fillStyle = "#fff";
                 ctx.font = "50px Arial";
                 ctx.fillText(bloco.score, 30, 68);
