@@ -1,22 +1,4 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8" />
-        <title>MInha engine</title>
-        <style>
-            canvas {
-                position: absolute;
-                top: 0px;
-                bottom: 0px;
-                left: 0px;
-                right: 0px;
-                margin: auto;
-            }
-        
-        </style>
-    </head>
-    <body>
-        <script>
+
             //variáveis de jogo
             var canvas, ctx, ALTURA, LARGURA, frames = 0, maxPulos = 3, velocidade = 6,
             estadoAtual, record,
@@ -32,7 +14,7 @@
             chao = {
                 y: 550,
                 altura:50,
-                cor: "#ffdf70",
+                cor: "#ff0000",
 
                 desenha: function() {
                     ctx.fillStyle = this.cor;
@@ -295,6 +277,3 @@
 
             //inicializa o jogo
             main();
-        </script>        
-    </body>
-</html>
