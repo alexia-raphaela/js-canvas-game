@@ -68,8 +68,8 @@
                 },
             
                 desenha: function() {
-                    ctx.fillStyle = this.cor;
-                    ctx.fillRect(this.x, this.y, this.largura, this.altura);
+                    //ctx.fillStyle = this.cor;
+                    //ctx.fillRect(this.x, this.y, this.largura, this.altura);
                 }
             },
 
@@ -238,7 +238,7 @@
 
                     ctx.save();
                     ctx.translate(LARGURA / 2, ALTURA / 2);
-                    ctx.fillStyle =  "#fff";
+                    ctx.fillStyle =  "black";
 
                     if (bloco.score > record){
                         ctx.fillText("Novo Record!", -200, -105);
