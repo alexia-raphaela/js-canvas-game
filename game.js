@@ -25,8 +25,8 @@
             bloco = {
                 x: 50,
                 y: 0,
-                altura: 50,
-                largura: 50,
+                altura: spriteBoneco.altura,
+                largura: spriteBoneco.largura,
                 cor: "#ff4e4e",
                 gravidade: 1.5,
                 velocidade: 0,
@@ -222,7 +222,7 @@
                 //ctx.fillRect(0, 0, LARGURA, ALTURA);
                
                 bg.desenha(0, 0);
-               
+                               
                 ctx.fillStyle = "#fff";
                 ctx.font = "50px Arial";
                 ctx.fillText(bloco.score, 30, 68);
